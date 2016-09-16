@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Lesson 7</title>
+	</head>
+	<body>
+		
+		<script>
+			console.log("ПЕРЕМЕННЫЕ. ЗАДАЧИ");
+			console.log("1. Придумайте названия для переменных, которые описывают:");
+			console.log("a. цену - Price");
+			console.log("b. максимальное число - Max");
+			console.log("c. имя пользователя - UserName");
+			console.log("d. константу 'минимальная цена - PriceMin'");
+
+			console.log("2. Что будет в консоли:");
+			console.log(test);
+			var test ="string";
+			var x = "string";
+			var x ="string №2";
+			console.log(x);
+
+			console.log("3. Что будет в консоли:");
+			console.log("Uncaught ReferenceError: test is not defined");
+			console.log("Uncaught TypeError: Assignment to constant variable.");
+			console.log("Uncaught SyntaxError: Identifier 'someVariable' has already been declared");
+
+			console.log(" ");
+
+			console.log("СТРОКИ. ЗАДАЧИ");
+			let string = "some test string";
+			console.log("1. Получить первую и последнюю буквы строки");
+			console.log("Первая буква:  " + string[0]);
+			console.log("Последняя буква:  " + string[15] + "(string.length-1 - узнали индекс последней буквы)");
+			console.log("2. Сделать первую и последнюю буквы в верхнем регистре");
+			var str = string[0];
+			console.log("Первая буква:  " + str.toUpperCase() + "(назначили переменную/ строка из первой буквы string)");
+			var str1 = string[15];
+			console.log("Первая буква:  " + str1.toUpperCase() + "(аналогично)");
+			console.log("3. Найти положение слова 'string' в строке");
+			console.log(string.indexOf("string"));
+			console.log("4. Найти положение второго пробела");
+			console.log(string.indexOf(' ', 5) + "   (нашел положение первого пробела - 4, затем string.indexOf('' , 5))");
+			console.log("5. Получить строку с 5-го символа длиной 4 буквы");
+			console.log(string.substr(5, 4));
+			console.log("6. Получить строку с 5-го по 9-й символы");
+			console.log(string.substring(5, 9));
+			console.log("7. Получить новую строку из исходной путем удаления последних 6-ти символов");
+			console.log(string.slice(0, -6) + "(console.log(string.slice(0, -6))? это имелось в виду??????????????????)");
+			console.log("8. Их двух переменных а=20 и b=16 получить переменную '2016'");
+			var a = 20, b = 16, c;
+			console.log(c = (a + "")+(b + "") + "   {c = (a + '')+(b + '')}");
+
+			console.log(" ");
+
+			console.log("ЧИСЛА. ЗАДАЧИ");
+			console.log("1. Получить число пи и округлить его до 2го знака");
+			console.log((Math.PI).toFixed(2) + "   ((Math.PI).toFixed(2))");
+			console.log("2. Максимальное и минимальное числа из ряда: 15, 11, 16, 12, 51, 12, 13, 51");
+			console.log('Максимум  ' + Math.max(15, 11, 16, 12, 51, 12, 13, 51)  + "   (Math.max)");
+			console.log('Минимум   ' + Math.min(15, 11, 16, 12, 51, 12, 13, 51)  + "   (Math.min)");
+			console.log("3. Работа с Math.random");
+			console.log("a. получить случайное число и округлить его до двух цифр после запятой");
+			console.log("b. получить случайное число от 0 до Х");
+			console.log("4. Проверить результат вычисления 0,6 + 0,7. Привести к норм виду");
+			console.log((0.6 + 0.7).toFixed(1) + "    (0.6 + 0.7).toFixed(2)????????????");
+			console.log("5. Получить число из строки '100$'");
+			console.log(parseInt("100$") +  "   (parseInt('100$')");
+		</script>
+		</body>
+</html>
