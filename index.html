@@ -62,11 +62,34 @@
 			console.log('Минимум   ' + Math.min(15, 11, 16, 12, 51, 12, 13, 51)  + "   (Math.min)");
 			console.log("3. Работа с Math.random");
 			console.log("a. получить случайное число и округлить его до двух цифр после запятой");
+			console.log(Math.random().toFixed(2) + "    (Math.random().toFixed(2))");
 			console.log("b. получить случайное число от 0 до Х");
+			console.log(Math.floor(Math.random(0, 100)*101) +"      (Math.floor(Math.random(0, 100)*101))");
 			console.log("4. Проверить результат вычисления 0,6 + 0,7. Привести к норм виду");
-			console.log((0.6 + 0.7).toFixed(1) + "    (0.6 + 0.7).toFixed(2)????????????");
+			console.log((0.6 + 0.7).toFixed(1) + "    (0.6 + 0.7).toFixed(1)????????????");
 			console.log("5. Получить число из строки '100$'");
 			console.log(parseInt("100$") +  "   (parseInt('100$')");
+			console.log(" ");
+
+			console.log("ОБЪЕКТ. ЗАДАЧИ");
+			console.log("1. Создать объект с полем product, равным 'iphone'");
+				let obj = {
+					product: "iphone"
+				};
+			console.log("   (let obj = {product: iphone;})");
+			console.log(obj.product + "    проверка");
+			console.log("2. Добавить в объект поле price, равное 1000 и поле currency, равное 'dollar'");
+				obj.price = 1000;
+				obj['currency'] = 'dollar';
+			console.log("obj.price = 1000; obj['currency'] = 'dollar';");
+			console.log(obj.price + ' ' + obj.currency + '   проверка');
+			console.log("3. Добавить поле details, которое будет содержать объект с полями model и color");
+				obj.details = {
+					model: 'iphone7' ,
+					color: 'black'
+				};
+			console.log("obj.details = {model: 'iphone7', color: 'black'};");	
+			console.log(obj.details.model + ' ' + obj.details.color + '   проверка');
 		</script>
 		</body>
 </html>
